@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; margin-top:1rem;">
+    
+            <div style="text-align: center; padding: 20px;">
+    
+                <img src="~/Content/zodiacmail/assets/logo-company.png" alt="Top Image" style=" height: 63px; object-fit: cover;">
+            </div>
+    
+            <div style="background-color: #6EABA6; padding: 5rem 2.5rem 4rem 2.5rem; color: #fff; text-align: center;">
+                <h1 style="margin: 0; color: #FFF; text-align: center; font-family: Poppins; font-size: clamp(1.75rem, 4vw, 2.25rem); font-style: normal; font-weight: 700;">Happy Birthday, <%= username  %></h1>
+                <p style="margin-top: 10px; color: rgba(255, 255, 255, 0.99); text-align: center; font-family: Poppins; font-size: clamp(1rem, 2.5vw, 1.125rem); font-style: normal; font-weight: 200;">
+                    <%= mailbody %>
+               </p>
+            </div>
+    
+    
+            <div style="text-align: center;">
+    
+                <img src="~/Content/zodiacmail/assets/zodiac-email-image.jpg" alt="Bottom Image" style=" height: 330px; width: 100%; object-fit: cover;">
+            </div>
+            <div style="font-family: Poppins; margin: 20px 0; padding: 25px 33px;">
+                <p style="line-height: 150%; font-family: Poppins; font-size: clamp(1.75rem, 3.5vw, 2rem); font-style: normal; font-weight: 500;">
+                    <span style="color: #6EABA6;">We’ve got a little birthday surprise:</span>
+                    <span style="color: #C4C3C9;"> your personalized horoscope to discover what the stars have in store for you</span>
+                </p>
+            </div>
+            <div style="text-align: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="486" height="2" viewBox="0 0 486 2" fill="none">
+                    <path d="M485 1.75C485.414 1.75 485.75 1.41421 485.75 1C485.75 0.585786 485.414 0.25 485 0.25V1.75ZM0 1.75H4.04167V0.25H0V1.75ZM12.125 1.75H20.2083V0.25H12.125V1.75ZM28.2917 1.75H36.375V0.25H28.2917V1.75ZM44.4583 1.75H52.5417V0.25H44.4583V1.75ZM60.625 1.75H68.7083V0.25H60.625V1.75ZM76.7917 1.75H84.875V0.25H76.7917V1.75ZM92.9583 1.75H101.042V0.25H92.9583V1.75ZM109.125 1.75H117.208V0.25H109.125V1.75ZM125.292 1.75H133.375V0.25H125.292V1.75ZM141.458 1.75H149.542V0.25H141.458V1.75ZM157.625 1.75H165.708V0.25H157.625V1.75ZM173.792 1.75H181.875V0.25H173.792V1.75ZM189.958 1.75H198.042V0.25H189.958V1.75ZM206.125 1.75H214.208V0.25H206.125V1.75ZM222.292 1.75H230.375V0.25H222.292V1.75ZM238.458 1.75H246.542V0.25H238.458V1.75ZM254.625 1.75H262.708V0.25H254.625V1.75ZM270.792 1.75H278.875V0.25H270.792V1.75ZM286.958 1.75H295.042V0.25H286.958V1.75ZM303.125 1.75H311.208V0.25H303.125V1.75ZM319.292 1.75H327.375V0.25H319.292V1.75ZM335.458 1.75H343.542V0.25H335.458V1.75ZM351.625 1.75H359.708V0.25H351.625V1.75ZM367.792 1.75H375.875V0.25H367.792V1.75ZM383.958 1.75H392.042V0.25H383.958V1.75ZM400.125 1.75H408.208V0.25H400.125V1.75ZM416.292 1.75H424.375V0.25H416.292V1.75ZM432.458 1.75H440.542V0.25H432.458V1.75ZM448.625 1.75H456.709V0.25H448.625V1.75ZM464.792 1.75H472.875V0.25H464.792V1.75ZM480.959 1.75H485V0.25H480.959V1.75Z" fill="black" />
+                </svg>
+            </div>
+            <div style="padding: 25px 33px; margin-top: 2rem;">
+                <p style="color: #000; text-align: start; font-family: Poppins; font-size: clamp(1.75rem, 3.5vw, 2rem); font-weight: 400;">Your Zodiac Sign is <span style="color: #69A39F; font-family: Poppins; font-size: clamp(1.75rem, 3.5vw, 2rem); font-style: normal; font-weight: 800;">Gemini</span></p>
+            </div>
+    
+            <div style="padding: 25px 33px;">
+                <p style="color: #000; font-family: Poppins; font-size: clamp(1rem, 2.5vw, 1.125rem); font-style: normal;">⭐ Personality Traits: </p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(1rem, 2.5vw, 1.125rem); font-style: normal; font-weight: 400;">You’re a born trailblazer, [Name]! Charismatic, creative, and unstoppable—this year, your powerful energy will light up everything you ......</p>
+            </div>
+            <div style="padding: 25px 33px;">
+                <p style="color: #000; font-family: Poppins; font-size: clamp(1rem, 2.5vw, 1.125rem); font-style: normal;">🔮 What’s Ahead: </p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(1rem, 2.5vw, 1.125rem); font-style: normal; font-weight: 400;">
+                    Brace yourself for some seriously exciting changes! The stars are pointing to growth, adventure, and a touch of serendipity. Whether it's love, career, or personal transformation, this is YOUR year to level up!
+                </p>
+            </div>
+            <div style="padding: 25px 33px;">
+                <p style="color: #000; font-family: Poppins; font-size: clamp(1rem, 2.5vw, 1.125rem); font-style: normal;">💖 Love Vibes: </p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(1rem, 2.5vw, 1.125rem); font-style: normal; font-weight: 400;">Your heart is magnetic today! You’ll attract all the right people into.....</p>
+            </div>
+            <div style="padding: 25px 33px;">
+                <p style="color: #000; font-family: Poppins; font-size: clamp(1rem, 2.5vw, 1.125rem); font-style: normal;">💪 Health Boost: </p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(1rem, 2.5vw, 1.125rem); font-style: normal; font-weight: 400;">Hold tight—big opportunities are headed your way! The universe is opening ......</p>
+            </div>
+            <div style="padding: 25px 33px;">
+                <p style="color: #000; font-family: Poppins; font-size: clamp(16px, 1.5vw, 18px); font-style: normal; font-weight: 400;">Lucky Number: <span style="color: #69A39F; font-family: Poppins; font-size: 18px; font-style: normal; font-weight: 700;">7</span> </p>
+                <p style="color: #000; font-family: Poppins; font-size: 18px; font-style: normal; font-weight: 400;">Lucky Color: <span style="color: #69A39F; font-family: Poppins; font-size: 18px; font-style: normal; font-weight: 700;">Red</span> </p>
+                <p style="color: #000; font-family: Poppins; font-size: 18px; font-style: normal; font-weight: 400;">Lucky Day: <span style="color: #69A39F; font-family: Poppins; font-size: 18px; font-style: normal; font-weight: 700;">Monday</span> </p>
+            </div>
+            <div style="padding: 25px 33px; ">
+                <p style="color: #000; font-family: Poppins; font-size: clamp(16px, 1.5vw, 18px); font-style: normal;">✈️ Your Travel Trends for 2025: </p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: 18px; font-style: normal; font-weight: 400;">In 2025, Virgo travelers will seek thoughtfully planned journeys that combine cultural exploration, nature retreats, and wellness escapes. Ideal destinations include historical sites in Greece or Japan, serene .......</p>
+            </div>
+            <div style="padding: 25px 33px;">
+                <p style="color: #000; font-family: Poppins; font-size: clamp(16px, 1.5vw, 18px); font-style: normal;">🌍 Destinations Written in Your Stars for 2025: </p>
+                <p style="color: #69A39F;  font-family: Poppins; font-size: 32px; font-style: normal; font-weight: 800; margin-top:1.5rem;">Bali</p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: 18px; font-style: normal; font-weight: 400;">Bali’s yoga retreats and wellness programs in Ubud offer Virgos the chance to focus on self-care and mental clarity. Virgo’s introspective side will be ....... </p>
+            </div>
+            <div style=" padding: 25px 33px; ">
+    
+                <p style="color: #69A39F; font-family: Poppins; font-size: clamp(1.5rem, 2.5vw, 2rem); font-style: normal; font-weight: 800;">Thailand</p>
+    
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(16px, 1.5vw, 18px); font-style: normal; font-weight: 400;">Bali’s yoga retreats and wellness programs in Ubud offer Virgos the chance to focus on self-care and mental clarity. Virgo’s introspective side will be ....... </p>
+            </div>
+            <div style=" padding: 25px 33px; ">
+    
+                <p style="color: #69A39F; font-family: Poppins; font-size: clamp(1.5rem, 2.5vw, 2rem); font-style: normal; font-weight: 800;">South Africa</p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(16px, 1.5vw, 18px); font-style: normal; font-weight: 400;">Bali’s yoga retreats and wellness programs in Ubud offer Virgos the chance to focus on self-care and mental clarity. Virgo’s introspective side will be ....... </p>
+            </div>
+            <div style=" padding: 25px 33px;">
+                <p style="color: #000; text-align: center; font-family: Poppins; font-size: 24px; font-style: normal; font-weight: 500;">Want to dive deeper into your cosmic forecast?</p>
+            </div>
+            <div style=" padding: 25px 33px; ">
+                <p style="border-radius: 16px; padding: 25px 46px; background: linear-gradient(90deg, #37ECBA 0%, #72AFD3 100%); color: #FFF; text-align: center; font-family: Poppins; font-size: 18px; font-style: normal; font-weight: 600; ">Click here to Unlock your full birthday insights now!</p>
+            </div>
+            <div style="padding: 25px 33px; ">
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(16px, 1.5vw, 18px); font-style: normal; font-weight: 400;">Here’s to a year full of laughter, success, and unforgettable memories!</p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(16px, 1.5vw, 18px); font-style: normal; font-weight: 400; margin-top: 1.5rem;">Happy Birthday, [Name]! </p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(16px, 1.5vw, 18px); font-style: normal; font-weight: 400; margin-top: 1.5rem;">With all our love, <br />Your friends at Culture Holidays </p>
+                <p style="color: #7F7F7F; font-family: Poppins; font-size: clamp(16px, 1.5vw, 18px); font-style: normal; font-weight: 400; margin-top: 1.5rem;">Cheers! 🥂</p>
+            </div>
+            <div style="background: rgba(217, 217, 217, 0.13); padding: 25px 33px;">
+                <p style="color: #000; font-family: Poppins; font-size: 14px; font-style: normal; font-weight: 400; line-height: normal;">Disclaimer:</p>
+                <p style="color: #000; font-family: Poppins; font-size: 14px; font-style: normal; font-weight: 400; line-height: normal; margin-top:1.5rem;">The birthday insights provided are based on general astrological interpretations. Accurate astrological predictions require more specific details, such as the exact time of birth, place, and planetary positions. The information shared is not intended as professional advice or predictions. Culture Holidays is not responsible for any actions taken based on the information provided.  </p>
+            </div>
+            <div style="background: #eee; padding: 20px;">
+                <div style="display:flex">
+                    <div style="width: 50%">
+                        <img src="https://cultureholidays.com/EmailImage/logoblackpng@2x.png" style="width: 149px;" />
+                        <p style="font-size: clamp(0.875rem, 1.5vw, 0.8rem); color: #000000; font-family: Poppins; ">
+                            cultureholidays.com
+                        </p>
+                        <p style="font-size: clamp(0.875rem, 1.5vw, 0.8rem); color: #000000; font-family: Poppins;">
+                            info@cultureholidays.com
+                        </p>
+                    </div>
+                    <div style="width: 50%; float: right">
+                        <div style="display: flex;float: right;">
+                            <a style="margin-right: 15px;" href="https://www.facebook.com/cultureholidays">
+                                <img src="https://cultureholidays.com/EmailImage/facebook.png" />
+                            </a>
+                            <a style="margin-right: 15px;"
+                               href="https://www.instagram.com/cultureholidaysofficial/?hl=en">
+                                <img src="https://cultureholidays.com/EmailImage/instagram.png" />
+                            </a>
+                            <a style="margin-right: 15px;" href="https://www.linkedin.com/company/cultureholidays/">
+                                <img src="https://cultureholidays.com/EmailImage/linkedin.png" />
+                            </a>
+                            <a href="https://www.youtube.com/CultureHolidaysOfficial">
+                                <img src="https://cultureholidays.com/EmailImage/youtube.png" />
+                            </a>
+                        </div>
+                        <div>
+                            <p style="float: right; font-size: clamp(0.875rem, 1.5vw, 0.8rem); color: #000000; margin-top: 2rem; font-family: Poppins;">
+                                India: +91 987-355-5111 (WhatsApp)
+                            </p>
+                            <p style="float: right; font-size: clamp(0.875rem, 1.5vw, 0.8rem); color: #000000; font-family: Poppins;">
+                                USA: 800 315 0755 (Toll Free)
+                            </p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>

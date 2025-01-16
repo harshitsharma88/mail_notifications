@@ -17,8 +17,10 @@
   "homepage": "https://github.com/harshitsharma88/mail_notifications#readme",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.9",
     "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "nodemailer": "^6.9.16"
+    "nodemailer": "^6.9.15"
   }
 }
