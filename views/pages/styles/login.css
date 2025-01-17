@@ -1,0 +1,225 @@
+body, html {
+    font-family: "Poppins", serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.light-mode {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+  }
+  
+  .login-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .mode-toggle i {
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  body.dark-mode .mode-toggle i {
+    color: #fff;
+  }
+  
+  
+  .mode-toggle button:hover {
+    background-color: #555;
+  }
+  
+  body.light-mode .mode-toggle button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  .login-panel {
+    width: 350px;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20% auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  body.dark-mode .login-panel {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  
+  button.submit-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  body.dark-mode button.submit-btn {
+    background-color: #0056b3;
+  }
+  
+  body.dark-mode button.submit-btn:hover {
+    background-color: #003f7f;
+  }
+  @media screen and (max-width: 768px) {
+    /* Mobile Layout Adjustments */
+    .dashboard {
+        position: relative;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+        width: 250px;
+    }
+
+    .sidebar.mobile-active {
+        left: 0;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    /* Mobile Header */
+    .header {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Overlay for mobile menu */
+    .mobile-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .mobile-overlay.active {
+        display: block;
+    }
+
+    /* Content Adjustments */
+    .content {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Small Mobile Adjustments */
+    .header {
+        height: 60px;
+    }
+
+    .profile-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .theme-toggle {
+        margin-right: 10px;
+    }
+
+    .profile-dropdown {
+        right: -10px;
+        width: 200px;
+    }
+
+    /* Tighter spacing in sidebar */
+    .nav-item {
+        padding: 10px 15px;
+    }
+
+    .nav-item i {
+        margin-right: 10px;
+    }
+
+    /* Content spacing */
+    .content {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Additional utility classes for mobile */
+.prevent-scroll {
+    overflow: hidden;
+}
