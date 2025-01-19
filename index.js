@@ -7,11 +7,13 @@ app.use(express.json());
 //-- Routes
 const emailRoutes = require("./routes/mailRoutes");
 const loginRoutes = require("./routes/loginRoutes");
+const mailTokenRoute = require("./routes/mailTokenRoute");
 
 
 app.use(express.static("./views/pages"));
 //-- Routing endpoints
 app.use("/api/mailing", emailRoutes);
+app.use("/OAuthcallback", mailTokenRoute);
 app.use("/", loginRoutes);
 
 
